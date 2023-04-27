@@ -1,4 +1,20 @@
 {
+  "api": {
+    "api": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "trippif1f40d9c"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
   "auth": {
     "trippid71becf1": {
       "customAuth": false,
@@ -25,6 +41,31 @@
       },
       "providerPlugin": "awscloudformation",
       "service": "Cognito"
+    }
+  },
+  "function": {
+    "trippif1f40d9c": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_trippif1f40d9c_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "trippif1f40d9c"
+        }
+      ]
+    },
+    "AMPLIFY_function_trippif1f40d9c_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "trippif1f40d9c"
+        }
+      ]
     }
   }
 }

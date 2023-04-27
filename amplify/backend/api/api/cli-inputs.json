@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "paths": {
+    "/trips": {
+      "name": "/trips",
+      "lambdaFunction": "trippif1f40d9c",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
+      }
+    }
+  }
+}
